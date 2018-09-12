@@ -22,7 +22,7 @@ export const RegisterInterestTemplate = ({
 			</h3>
 			<p>{description}</p>
 
-			<form name="contact" method="POST" netlify>
+			<form name="contact" method="POST" data-netlify="true" 	action="#">
 
 				<p>
 					<label>Your Email: <input type="email" name="email" /></label>
