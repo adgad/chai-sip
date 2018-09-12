@@ -10,12 +10,19 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/register-interest/index.md"
+      - file: "src/pages/index.md"
         label: "Register Interest"
         name: "register-interest"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "register-interest"}
           - {label: Heading, name: heading, widget: string}
           - {label: Tagline, name: tagline, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Description, name: description, widget: string}
+      - file: "src/pages/email-success.md"
+        label: "Email Success"
+        name: "email-success"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "email-success"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Content, name: content, widget: string}
