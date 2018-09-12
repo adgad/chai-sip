@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import EmailSubmit from '../components/EmailSubmit'
 
 export const RegisterInterestTemplate = ({
   image,
@@ -15,22 +16,15 @@ export const RegisterInterestTemplate = ({
 			style={{ backgroundImage: `url(${image})` }}
 		></div>
 
-		<div class="content">
+		<div className="content">
 
 			<h3 className="has-text-weight-semibold is-size-2">
 				{heading} - {tagline}
 			</h3>
 			<p>{description}</p>
 
-			<form name="contact" method="POST" data-netlify="true" 	action="#">
+      <EmailSubmit />
 
-				<p>
-					<label>Your Email: <input type="email" name="email" /></label>
-				</p>
-				<p>
-					<button type="submit">Register</button>
-				</p>
-			</form>
 		</div>
   </section>
 )
@@ -68,7 +62,7 @@ RegisterInterest.propTypes = {
 export default RegisterInterest
 
 export const registerInterestQuery = graphql`
-  query ProductPage($id: String!) {
+  query RegisterInterest($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         tagline

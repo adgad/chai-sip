@@ -9,6 +9,7 @@ const RegisterInterestPreview = ({ entry }) => {
 			heading={entry.getIn(['data', 'heading'])}
 			tagline={entry.getIn(['data', 'tagline'])}
 			description={entry.getIn(['data', 'description'])}
+			successMessage={entry.getIn(['data', 'successMessage'])}
       image={entry.getIn(['data', 'image'])}
     />
   )
