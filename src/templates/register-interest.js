@@ -10,17 +10,14 @@ export const RegisterInterestTemplate = ({
 	description,
 	tagline
 }) => (
-  <section className="section section--gradient">
-		<div
-			className="full-width-image-container margin-top-0"
-			style={{ backgroundImage: `url(${image})` }}
-		></div>
+  <section className="register">
+
 
 		<div className="content">
 
-			<h3 className="has-text-weight-semibold is-size-2">
-				{heading} - {tagline}
-			</h3>
+			<h2 className="has-text-weight-semibold is-size-2">
+				{heading}
+			</h2>
 			<p>{description}</p>
 
       <EmailSubmit />
@@ -40,9 +37,10 @@ const RegisterInterest = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout
+      image={frontmatter.image}>
       <RegisterInterestTemplate
-        image={frontmatter.image}
+
         tagline={frontmatter.tagline}
         heading={frontmatter.heading}
         description={frontmatter.description}

@@ -1,25 +1,41 @@
 
 // Config vars
-
-$primary: #fff825;
+$base: #333;
+$primary: #fccf5c;
 $primary-invert: #fff;
 
 body
-  background-color: $primary;
+  background-color: $base;
+  margin: 0;
+  font-family: monospace;
+
+.grid
+  display: grid;
+  grid-template-rows: 20px 1fr 20px;
+  grid-template-columns: 20px 1fr 20px;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+
 
 // Helper Classes
 .full-width-image-container
-  width: 100vw
-  height: 400px
-  position: relative
-  left: 50%
-  right: 50%
-  margin: 5em -50vw
-  background-size: cover
-  background-position: bottom
-  display: flex
-  justify-content: center
-  align-items: center
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  top: 0;
 
-.margin-top-0
-  margin-top: 0 !important
+.section
+  background-color: $primary;
+  grid-row: 2;
+  grid-column: 2;
+  padding: 20px;
+  box-shadow: 2px 2px 4px #000;
+  border-radius: 4px;
+
+.form-button

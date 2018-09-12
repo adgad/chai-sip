@@ -1,5 +1,7 @@
 import React from "react";
 
+import 'form.sass';
+
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -9,6 +11,7 @@ export default class Contact extends React.Component {
   render() {
     return (
         <form
+          className="email-submit"
           name="register-interest"
           method="post"
           action="/email-success"
@@ -26,14 +29,15 @@ export default class Contact extends React.Component {
           </p>
 
           <p>
-            <label>
-              Your email:<br />
-              <input type="email" name="email" onChange={this.handleChange} />
+            <label className="form-label">
+                Email:
             </label>
+              <input className="form-input" type="email" name="email" onChange={this.handleChange} />
+
           </p>
 
           <p>
-            <button type="submit">Send</button>
+            <button className="form-button" type="submit">Register</button>
           </p>
         </form>
     );
