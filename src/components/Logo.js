@@ -5,7 +5,7 @@ import 'logo.sass'
 const Logo = ({ tagline }) => (
 	<div className="logo">
 		<h1 className="title visually-hidden">Chai Sip</h1>
-		<a className="logo-image" href="/">
+		<a className="logo-image" href="/" alt="Home">
 			<img className="logo-image" src="/img/logo.jpeg" alt=""/>
 		</a>
 		<div className="logo-tagline">
