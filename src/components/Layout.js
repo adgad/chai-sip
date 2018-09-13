@@ -12,7 +12,7 @@ const TemplateWrapper = ({ image, children }) => (
         className="full-width-image-container margin-top-0"
         style={{ backgroundImage: `url(${image})` }}
       ></div>
-      <div className="section">
+      <div className="content">
         <Logo/>
         {children}
       </div>

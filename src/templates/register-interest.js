@@ -12,9 +12,6 @@ export const RegisterInterestTemplate = ({
 }) => (
   <section className="register">
 
-
-		<div className="content">
-
 			<h2 className="has-text-weight-semibold is-size-2">
 				{heading}
 			</h2>
@@ -22,7 +19,6 @@ export const RegisterInterestTemplate = ({
 
       <EmailSubmit />
 
-		</div>
   </section>
 )
 
