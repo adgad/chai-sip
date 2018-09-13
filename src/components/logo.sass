@@ -1,0 +1,22 @@
+
+$primary: #fccf5c;
+.logo
+
+    display: grid;
+    grid-template-rows: 120px 30px 30px;
+    grid-template-columns: 30px 90px 30px 1fr;
+.logo-image
+    width: 100%
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 3;
+
+.logo-tagline
+    display: flex;
+    background: $primary;
+    grid-row: 2 / -1;
+    grid-column: 3 / -1;
+    box-sizing: border-box;
+    color: black;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
