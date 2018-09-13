@@ -34,10 +34,10 @@ const RegisterInterest = ({ data }) => {
 
   return (
     <Layout
-      image={frontmatter.image}>
+      image={frontmatter.image}
+      tagline={frontmatter.tagline}>
       <RegisterInterestTemplate
 
-        tagline={frontmatter.tagline}
         heading={frontmatter.heading}
         description={frontmatter.description}
       />

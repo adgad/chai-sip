@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import Logo from './Logo'
 import './all.sass'
 
-const TemplateWrapper = ({ image, children }) => (
+const TemplateWrapper = ({ image, tagline, children }) => (
   <div>
     <Helmet title="Chai Sip" />
     <div className="grid">
@@ -13,7 +13,7 @@ const TemplateWrapper = ({ image, children }) => (
         style={{ backgroundImage: `url(${image})` }}
       ></div>
       <div className="content">
-        <Logo/>
+        <Logo tagline={tagline}/>
         {children}
       </div>
 
