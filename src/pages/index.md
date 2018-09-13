@@ -1,8 +1,8 @@
 ---
-templateKey: 'register-interest'
-heading: Register your interest
-path: /
-image: /img/tea.jpg
+templateKey: register-interest
+heading: We are currently building this website
 tagline: Bring a richer tea experience to your next event
-description: We are currently building this website
-successMessage: Thanks for registering!
+image: /img/tea.jpg
+description: Sign up for the latest email updates about Chai Sip
+---
+
