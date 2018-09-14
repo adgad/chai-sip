@@ -4,12 +4,15 @@ import Helmet from 'react-helmet'
 import Logo from './Logo'
 import './all.sass'
 
+
+import { SocialIcon } from 'react-social-icons';
+
 const TemplateWrapper = ({ image, tagline, children }) => (
   <div>
     <Helmet>
       <html lang="en" />
-      <title>Chai Sip</title>
-      <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
+      <title>ChaiSip</title>
+      <link rel="icon" type="image/jpeg" href="/img/favicon.jpg"/>
       <meta charSet="utf-8" />
       <meta name="description" value="Chai Sip brings a richer tea experience for events events in London and the UK" />
     </Helmet>
@@ -23,6 +26,12 @@ const TemplateWrapper = ({ image, tagline, children }) => (
         <Logo tagline={tagline}/>
         {children}
       </div>
+
+      <div className="footer">
+        <SocialIcon url="http://twitter.com/chai_sip" />
+        <SocialIcon url="https://www.instagram.com/chai.sip/" />
+      </div>
+
 
     </div>
   </div>

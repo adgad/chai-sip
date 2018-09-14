@@ -9,7 +9,7 @@ const Logo = ({ tagline }) => (
 			<img className="logo-image" src="/img/logo.jpeg" alt=""/>
 		</a>
 		<div className="logo-tagline">
-			<span class="logo-tagline-text">{tagline}</span>
+			<span className="logo-tagline-text">{tagline}</span>
 		</div>
 	</div>
 )

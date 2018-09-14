@@ -28,8 +28,8 @@ export default class Contact extends React.Component {
             </label>
           </p>
 
-          <div class="email-form">
-            <label for="email" className="visuallyhidden" hidden>
+          <div className="email-form">
+            <label htmlFor="email" className="visuallyhidden" hidden>
                 Email address:
             </label>
             <input placeholder="Email address" className="form-input margin-right" type="email" name="email" onChange={this.handleChange} />
