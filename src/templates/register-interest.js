@@ -35,7 +35,9 @@ const RegisterInterest = ({ data }) => {
   return (
     <Layout
       image={frontmatter.image}
-      tagline={frontmatter.tagline}>
+      tagline={frontmatter.tagline}
+      metaDescription={frontmatter.metaDescription}
+      >
       <RegisterInterestTemplate
 
         heading={frontmatter.heading}
@@ -62,6 +64,7 @@ export const registerInterestQuery = graphql`
         tagline
         image
         heading
+        metaDescription
         emailSignupMessage
       }
     }

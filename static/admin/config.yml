@@ -15,6 +15,7 @@ collections:
         name: "register-interest"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "register-interest"}
+          - {label: Meta Description, name: metaDescription, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Tagline, name: tagline, widget: string}
           - {label: Image, name: image, widget: image}

@@ -7,14 +7,14 @@ import './all.sass'
 
 import { SocialIcon } from 'react-social-icons';
 
-const TemplateWrapper = ({ image, tagline, children }) => (
+const TemplateWrapper = ({ image, tagline, metaDescription, children }) => (
   <div>
     <Helmet>
       <html lang="en" />
       <title>ChaiSip</title>
       <link rel="icon" type="image/jpeg" href="/img/favicon.jpg"/>
       <meta charSet="utf-8" />
-      <meta name="description" content="Chai Sip brings a richer tea experience for events events in London and the UK" />
+      <meta name="description" content={metaDescription} />
     </Helmet>
     <div className="grid">
       <div className="content">

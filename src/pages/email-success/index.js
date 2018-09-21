@@ -10,7 +10,9 @@ const EmailSuccess = ({ data }) => {
     return (
     <Layout
         image={frontmatter.image}
-        tagline={frontmatter.tagline}>
+        tagline={frontmatter.tagline}
+        metaDescription={frontmatter.metaDescription}
+      >
           <p>{frontmatter.successMessage}</p>
 
       </Layout>
@@ -36,6 +38,7 @@ const EmailSuccess = ({ data }) => {
             tagline
             image
             heading
+            metaDescription
             emailSignupMessage
             successMessage
           }

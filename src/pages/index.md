@@ -1,5 +1,6 @@
 ---
 templateKey: register-interest
+metaDescription: Chai Sip brings a richer tea experience for events events in London and the UK
 heading: We are currently building this website...
 tagline: Bring a richer tea experience to your next event
 image: /img/tea.jpg
