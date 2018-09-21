@@ -17,11 +17,6 @@ const TemplateWrapper = ({ image, tagline, children }) => (
       <meta name="description" value="Chai Sip brings a richer tea experience for events events in London and the UK" />
     </Helmet>
     <div className="grid">
-
-      <div
-        className="full-width-image-container margin-top-0"
-        style={{ backgroundImage: `url(${image})` }}
-      ></div>
       <div className="content">
         <Logo tagline={tagline}/>
         {children}
@@ -32,7 +27,10 @@ const TemplateWrapper = ({ image, tagline, children }) => (
         <SocialIcon url="https://www.instagram.com/chai.sip/" />
       </div>
 
-
+      <div
+        className="full-width-image-container margin-top-0"
+        style={{ backgroundImage: `url(${image})` }}
+      ></div>
     </div>
   </div>
 )

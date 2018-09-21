@@ -1,18 +1,11 @@
-const autoprefixer = require('autoprefixer');
-
 module.exports = {
   siteMetadata: {
     title: 'ChaiSip',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        postCssPlugins: [autoprefixer({ grid: true})],
-      },
-    },
-        {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
