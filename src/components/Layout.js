@@ -14,7 +14,7 @@ const TemplateWrapper = ({ image, tagline, children }) => (
       <title>ChaiSip</title>
       <link rel="icon" type="image/jpeg" href="/img/favicon.jpg"/>
       <meta charSet="utf-8" />
-      <meta name="description" value="Chai Sip brings a richer tea experience for events events in London and the UK" />
+      <meta name="description" content="Chai Sip brings a richer tea experience for events events in London and the UK" />
     </Helmet>
     <div className="grid">
       <div className="content">
