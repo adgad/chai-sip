@@ -7,7 +7,7 @@ import EmailSubmit from '../components/EmailSubmit'
 export const RegisterInterestTemplate = ({
   image,
   heading,
-	description,
+	emailSignupMessage,
 	tagline
 }) => (
   <section className="register">
@@ -15,7 +15,7 @@ export const RegisterInterestTemplate = ({
 			<h2 className="has-text-weight-semibold is-size-2">
 				{heading}
 			</h2>
-			<p>{description}</p>
+			<p>{emailSignupMessage}</p>
 
       <EmailSubmit />
 
@@ -26,7 +26,7 @@ RegisterInterestTemplate.propTypes = {
   image: PropTypes.string,
   tagline: PropTypes.string,
   heading: PropTypes.string,
-  description: PropTypes.string
+  emailSignupMessage: PropTypes.string
 }
 
 const RegisterInterest = ({ data }) => {
@@ -39,7 +39,7 @@ const RegisterInterest = ({ data }) => {
       <RegisterInterestTemplate
 
         heading={frontmatter.heading}
-        description={frontmatter.description}
+        emailSignupMessage={frontmatter.emailSignupMessage}
       />
     </Layout>
   )
@@ -62,7 +62,7 @@ export const registerInterestQuery = graphql`
         tagline
         image
         heading
-        description
+        emailSignupMessage
       }
     }
   }

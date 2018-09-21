@@ -36,7 +36,7 @@ const EmailSuccess = ({ data }) => {
             tagline
             image
             heading
-            description
+            emailSignupMessage
             successMessage
           }
         }

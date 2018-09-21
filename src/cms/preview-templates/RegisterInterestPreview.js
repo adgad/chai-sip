@@ -8,7 +8,7 @@ const RegisterInterestPreview = ({ entry }) => {
     <RegisterInterestTemplate
 			heading={entry.getIn(['data', 'heading'])}
 			tagline={entry.getIn(['data', 'tagline'])}
-			description={entry.getIn(['data', 'description'])}
+			emailSignupMessage={entry.getIn(['data', 'emailSignupMessage'])}
 			successMessage={entry.getIn(['data', 'successMessage'])}
       image={entry.getIn(['data', 'image'])}
     />

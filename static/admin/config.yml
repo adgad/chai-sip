@@ -18,5 +18,5 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Tagline, name: tagline, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: Description, name: description, widget: string}
+          - {label: Email Signup Message, name: emailSignupMessage, widget: string}
           - {label: Registration Success Message, name: successMessage, widget: string}
